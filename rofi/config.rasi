@@ -1,0 +1,89 @@
+configuration {
+	font: "Monospace bold 12";
+	display-drun: "Search ";
+	display-window: "Window ";
+	location: 6;
+	xoffset: 0;
+	yoffset: -5;
+	show-icons: true;
+}
+window {
+	border: 0;
+	text-color: #eeeeee;
+	background-color: #363636;
+}
+element {
+	cursor: pointer;
+	text-color: #eeeeee;
+	background-color: #363636;
+	padding: 5px;
+}
+element-text {
+    background-color: transparent;
+    highlight:        inherit;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+element normal.urgent {
+    background-color: #363636;
+    text-color:       #eeeeee;
+}
+element normal.normal {
+    background-color: #363636;
+    text-color:       #eeeeee;
+}
+element selected.normal {
+    background-color: #eeeeee;
+    text-color:       #363636;
+}
+element alternate.normal {
+    background-color: #363636;
+    text-color:       #eeeeee;
+}
+lement alternate.urgent {
+    background-color: #363636;
+    text-color:       #eeeeee;
+}
+element alternate.active {
+    background-color: #363636;
+    text-color:       #eeeeee;
+}
+listview {
+	fixed-height: 0;
+	border:       0;
+	spacing:      2px;
+	scrollbar:    true;
+	padding:      4px 0 0 0;
+	background-color: #363636;
+	text-color: #eeeeee;
+}
+scrollbar {
+	handle-color: #eeeeee;
+	width: 4px;
+	handle-width: 8px;
+}
+inputbar {
+    spacing:    0px;
+    text-color: #eeeeee;
+    padding:    5px;
+    children:   [ "prompt","textbox-prompt-colon","entry","overlay","case-indicator" ];
+}
+textbox {
+    text-color: #eeeeee;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: #eeeeee;
+}
+prompt {
+    spacing:    0;
+    text-color: #eeeeee;
+}
+entry {
+    placeholder:       "";
+    cursor:            text;
+    spacing:           0;
+    text-color:        #eeeeee;
+    placeholder-color: rgba ( 128, 128, 128, 100 % );
+}
