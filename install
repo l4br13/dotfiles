@@ -7,8 +7,8 @@ printf "install: .config "
 cp -r $dir/i3/config ~/.config/i3/config
 cp -r $dir/dunst ~/.config
 cp -r $dir/i3status ~/.config
-cp -r $dir/i3blocks ~/.config
 cp -r $dir/alacritty ~/.config
 cp -r $dir/rofi ~/.config
+cp -r $dir/fontconfig ~/.config
 
 printf "(done)\n"
