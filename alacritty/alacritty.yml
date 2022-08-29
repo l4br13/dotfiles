@@ -1,6 +1,6 @@
 font:
   normal:
-    family: Monospace
+    family: ui
   size: 10
 colors:
   primary:

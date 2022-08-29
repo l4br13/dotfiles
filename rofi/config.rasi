@@ -1,5 +1,5 @@
 configuration {
-	font: "Monospace bold 12";
+	font: "ui bold 12";
 	display-drun: "Search ";
 	display-window: "Window ";
 	location: 6;
