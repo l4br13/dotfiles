@@ -15,7 +15,7 @@ set $super Super_L
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 
-font pango:ui bold 12
+font pango:ui bold 11
 #font pango:terminus 11
 #font pango:terminus bold 11
 
@@ -310,6 +310,8 @@ assign [instance="xfburn"] "Xfburn"
 assign [instance="gparted"] "GParted"
 assign [instance="scite"] "SciTE"
 assign [instance="devdocs-desktop"] "DevDocs"
+assign [instance="bottles"] "Bottles"
+assign [instance="spotify"] "Spotify"
 
 for_window [instance="galculator"] floating enable
 for_window [instance="xfce4-appfinder"] floating enable
