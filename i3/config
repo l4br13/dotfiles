@@ -281,7 +281,7 @@ assign [class="Xarchiver"] "Xarchiver"
 assign [instance="libreoffice"] "LibreOffice"
 assign [instance="librecad"] "LibreCAD"
 assign [instance="gimp"] "GIMP"
-assign [instance="code"] "CODE"
+assign [instance="code"] "Code"
 assign [instance="remmina"] "Remmina"
 assign [instance="VirtualBox Manager"] "Virtualbox"
 assign [instance="lxappearance"] "CustomizeLook"
@@ -311,8 +311,9 @@ assign [instance="gparted"] "GParted"
 assign [instance="scite"] "SciTE"
 assign [instance="devdocs-desktop"] "DevDocs"
 assign [instance="bottles"] "Bottles"
-assign [instance="spotify"] "Spotify"
+assign [class="Spotify"] "Spotify"
 
+for_window [class="Spotify"] move window to workspace "Spotify"
 for_window [instance="galculator"] floating enable
 for_window [instance="xfce4-appfinder"] floating enable
 for_window [all] move position center
