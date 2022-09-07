@@ -39,6 +39,7 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dunst
+exec --no-startup-id /usr/bin/lxpolkit
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -263,7 +264,7 @@ client.background       #ffffff
 
 # assign program
 assign [class="Alacritty"] number $ws0
-assign [class="XTerm"] "Terminal"
+assign [class="XTerm"] number $ws0
 assign [class="firefox"] "Firefox"
 assign [class="Thunderbird"] "Thunderbird"
 assign [class="Balsa"] "Balsa"
@@ -311,7 +312,8 @@ assign [instance="gparted"] "GParted"
 assign [instance="scite"] "SciTE"
 assign [instance="devdocs-desktop"] "DevDocs"
 assign [instance="bottles"] "Bottles"
-assign [class="Spotify"] "Spotify"
+assign [class="PPSSPPSDL"] "PPSSPP"
+assign [class="PPSSPPQt"] "PPSSPP"
 
 for_window [class="Spotify"] move window to workspace "Spotify"
 for_window [instance="galculator"] floating enable

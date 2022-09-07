@@ -10,5 +10,5 @@ cp -r $dir/i3status ~/.config
 cp -r $dir/alacritty ~/.config
 cp -r $dir/rofi ~/.config
 cp -r $dir/fontconfig ~/.config
-
+cp -r $dir/x/resources ~/.Xresources
 printf "(done)\n"

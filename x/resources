@@ -1,0 +1,6 @@
+*background: #000000
+*foreground: #ffffff
+
+XTerm*renderFont: true
+XTerm*faceName: Terminus
+XTerm*faceSize: 12
