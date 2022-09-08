@@ -2,8 +2,8 @@ configuration {
 	font: "ui bold 12";
 	display-drun: "Search ";
 	display-window: "Window ";
-	location: 6;
-	xoffset: 0;
+	location: 7;
+	xoffset: 5;
 	yoffset: -5;
 	show-icons: true;
 }

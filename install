@@ -8,7 +8,9 @@ cp -r $dir/i3/config ~/.config/i3/config
 cp -r $dir/dunst ~/.config
 cp -r $dir/i3status ~/.config
 cp -r $dir/alacritty ~/.config
+cp -r $dir/polybar ~/.config
 cp -r $dir/rofi ~/.config
 cp -r $dir/fontconfig ~/.config
 cp -r $dir/x/resources ~/.Xresources
+
 printf "(done)\n"
