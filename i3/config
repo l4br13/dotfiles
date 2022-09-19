@@ -36,10 +36,10 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id dunst
-exec --no-startup-id /usr/bin/lxpolkit
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id xfce4-power-manager
+exec_always --no-startup-id dunst
+exec_always --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id polybar
 
 # Use pactl to adjust volume in PulseAudio.

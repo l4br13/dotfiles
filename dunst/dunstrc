@@ -33,7 +33,7 @@ cu# See dunst(5) for all configuration options
     origin = bottom-right
 
     # Offset from the origin
-    offset = 5x5
+    offset = 5x27
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
