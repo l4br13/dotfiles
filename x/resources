@@ -4,3 +4,7 @@
 XTerm*renderFont: true
 XTerm*faceName: Terminus
 XTerm*faceSize: 12
+
+UXTerm*renderFont: true
+UXTerm*faceName: Terminus
+UXTerm*faceSize: 12
