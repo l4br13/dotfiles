@@ -300,6 +300,7 @@ assign [class="PPSSPPSDL"] "PPSSPP"
 assign [class="PPSSPPQt"] "PPSSPP"
 assign [class="Steam"] "Steam"
 assign [instance="lutris"] "Lutris"
+assign [class="GitHub Desktop"] "GitHub"
 
 for_window [class="Spotify"] move window to workspace "Spotify"
 for_window [instance="galculator"] floating enable
