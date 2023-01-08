@@ -48,10 +48,10 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym F5 reload, restart
-bindsym F9 exec systemctl suspend
+bindsym F5 reload
+bindsym F9 exec --no-startup-id systemctl suspend
 
-#bindsym --release Super_L workspace $ws0
+#bindsym Super_L workspace $ws0
 
 # Use screenshot on Print key
 bindsym $mod+Print exec --no-startup-id xfce4-screenshooter -i
@@ -171,6 +171,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
@@ -260,15 +261,23 @@ assign [class="Mousepad"] "Mousepad"
 assign [class="Gvim"] "GVim"
 assign [class="Rhythmbox"] "Rhythmbox"
 assign [class="Thunar"] "Files"
+for_window [class="Thunar" title="File Operation Progress"] floating enable
 assign [class="Parole"] "Parole"
 assign [instance="vlc"] "VLC"
 assign [class="Xarchiver"] "Xarchiver"
+
 assign [instance="libreoffice"] "LibreOffice"
+for_window [class="libreoffice"] move window to workspace "LibreOffice"
+for_window [title="LibreOffice"] move window to workspace "LibreOffice"
+
 assign [instance="librecad"] "LibreCAD"
 assign [instance="gimp"] "GIMP"
+
 assign [instance="code"] "Code"
+for_window [instance="code"] move window to workspace "Code"
 assign [instance="remmina"] "Remmina"
-assign [instance="VirtualBox Manager"] "Virtualbox"
+assign [instance="VirtualBox Manager"] "VirtualBox"
+for_window [instance="VirtualBox Manager"] move window to workspace "VirtualBox"
 assign [instance="lxappearance"] "CustomizeLook"
 assign [instance="jetbrains-studio"] "AndroidStudio"
 assign [instance="xfce4-settings-manager"] "Settings"
@@ -302,10 +311,37 @@ assign [class="PPSSPPQt"] "PPSSPP"
 assign [class="Steam"] "Steam"
 assign [instance="lutris"] "Lutris"
 assign [class="GitHub Desktop"] "GitHub"
+
 assign [class="Evince"] "Evince"
+for_window [class="Evince"] move window to workspace "Evince"
+
+assign [class="DBeaver"] "DBeaver"
+for_window [class="DBeaver"] move window to workspace "DBeaver"
+
+assign [class="Bless"] "Bless"
+for_window [class="Bless"] move window to workspace "Bless"
+
+assign [class="Cheese"] "Cheese"
+for_window [class="Cheese"] move window to workspace "Cheese"
+
+assign [class="Gftp-gtk"] "GFTP"
+for_window [class="Gftp-gtk"] move window to workspace "GFTP"
+
+assign [class="Vncviewer"] "TigerVNC"
+for_window [class="Vncviewer"] move window to workspace "TigerVNC"
+
+assign [instance="com.github.babluboy.bookworm"] "Bookworm"
+for_window [instance="com.github.babluboy.bookworm"] move window to workspace "Bookworm"
+
+assign [class="Opera"] "Opera"
+for_window [class="Opera"] move window to workspace "Opera"
+
+for_window [class="Pidgin"] move window to workspace "Pidgin"
+
+for_window [class="codeblocks"] move window to workspace "Codeblocks"
 
 for_window [class="Spotify"] move window to workspace "Spotify"
-for_window [instance="galculator"] floating enable
+for_window [instance="galculator"] floating enablele
 for_window [instance="xfce4-appfinder"] floating enable
 for_window [all] move position center
 for_window [class="Alacritty"] floating enable
