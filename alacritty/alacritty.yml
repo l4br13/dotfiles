@@ -1,6 +1,6 @@
 font:
   normal:
-    family: Terminus (TTF)
+    family: Terminus
   style: Regular
   size: 10
 colors:
@@ -11,5 +11,5 @@ env:
   TERM: xterm-256color
 window:
   padding:
-    x: 0
-    y: 0
+    x: 2
+    y: 2
